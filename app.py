@@ -1,8 +1,8 @@
 #dbs prediction
 
-from flask import flask, render_template, request
+from flask import Flask, render_template, request
 
-app = flask(__name__)
+app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"]) 
 ## in flask framework, slash is first function to look for 
