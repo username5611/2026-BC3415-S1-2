@@ -10,7 +10,8 @@ app = Flask(__name__)
 ## get means send to front end
 ## post means post to front end 
 def index():
-    return("hi")
+    return(render_template("index.html"))
 
 if __name__ == "__main__":
     app.run()
+
