@@ -27,9 +27,9 @@ def dbs():
 @app.route("/result", methods=["GET","POST"])
 def result():
     q = float(request.form.get("q"))
-    r = result - modelPKL.predict([[q]])
+    r = modelPKL.predict([[q]])
     return(render_template("result.html", r=r[0]))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=1234)
 
