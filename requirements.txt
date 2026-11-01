@@ -2,3 +2,4 @@ flask #write programming
 gunicorn #communicate front/back end 
 joblib
 scikit-learn
+groq
